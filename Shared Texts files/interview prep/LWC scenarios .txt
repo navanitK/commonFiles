@@ -1,0 +1,18 @@
+LWC scenarios : 
+
+1) Account Team History 
+created a LWC compoenent to show custom history table for Account team Object. 
+Account teams does not have a history table. 
+Client wanted to see , who changed the Access for , Account , Opportunity , Case on the Account team and from what level to what level. 
+
+we designed a custom table to manage this and showed the data in tabular format in LWC.
+
+The LWC was places in the Flexi page on the Account related list tab. 
+
+2) 
+
+Table too Large : 
+
+Case table was grown beyond 300 Fields : 
+
+Solution we created antother table and had one to one mapping 

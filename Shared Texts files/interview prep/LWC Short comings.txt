@@ -1,0 +1,26 @@
+what places u cannot use LWC OR Unsupported features of Lightning Web Components ? 
+
+Overriding standard buttons like Create, Edit & View
+	- Use AURA component 
+Custom Actions
+	- Use AURA component
+Global Actions
+	- Use AURA component
+List View Actions
+	- bind button to vf page and then call url enabled aura component: u can pass data using URL
+Related List View Actions
+	- bind button to vf page and then call url enabled aura component: u can pass data using URL
+Lightning Out [Beta]
+	- IDK
+Rendering LWC as PDF Page
+	- USE VF PAGE
+Using LWC in Email Templates
+	- VF page supported and done in past not sure of aura 
+	
+	
+	Not sure of the work arounds for below.
+Console APIs (Navigation Item API, Workspace API, Utility Bar API)	
+Chatter Action
+Conversation Toolkit API
+Omni Toolkit API
+Quick Action API

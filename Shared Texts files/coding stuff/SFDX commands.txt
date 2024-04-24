@@ -1,0 +1,202 @@
+git checkout -b feature-ONE-3386-SF-Rules-Of-Engagement
+
+sfdx expereo:environment:create --name rules-of-Engagement --devpool alpha
+
+git diff --name-only <starting SHA> HEAD
+
+
+sfdx force:source:retrieve -m "ApexClass, Profile:My Profile, Profile: AnotherProfile"
+
+sfdx force:source:retrieve -m "Flow:SetLoggedInUserAsDamForContractAccount, Flow:ManageDefaultAccountManager, Flow:ClearTheDamFromAccountTeam, Flow:GiveDAMEditAccessToAccount"	 
+
+sfdx force:source:retrieve -m "ApexClass:AccountDefaultAccountManagerFlowsTest"
+
+sfdx force:source:deploy -p "path/to/apex/classes/MyClass.cls,path/to/source/objects"
+sfdx force:source:deploy -p  "c:/Users/navanit.kamble/OneDrive - Expereo International/Documents/my dev Ors/Dev1/force-app/main/default/flows/add_atm.flow-meta.xml"
+
+
+src\core\main\default\objects\Account\validationRules\DefaultAccountManagerNullWhenIsContract.validationRule-meta.xml
+C:\Users\navanit.kamble\OneDrive - Expereo International\Documents\exp work\nextgen-salesforce-v2\src\core\main\default\objects\Account\validationRules\DefaultAccountManagerNullWhenIsContract.validationRule-meta.xml
+
++31 684163426
+
+AccountTeamMembersSelector
+
+sfdx force:source:deploy -p "path/to/apex/classes/AccountTeamMembersSelector.cls,"
+
+sfdx force:source:retrieve -m "ApexClass:AccountTeamMemberFactory,ApexClass:AccountTeamMembersSelectorTest"
+
+
+sfdx force:apex:test:run --classnames "TestA,TestB" --resultformat tap --codecoverage
+
+sfdx force:apex:test:run --classnames "AccountTeamMembersSelectorTest" --resultformat tap --codecoverage
+
+sfdx force:apex:test:run --classnames "AccountsServiceTest" --resultformat tap --codecoverage
+
+sfdx force:apex:class:create -n AccessForDAMMetaDataSelector -d ..\src\core\main\default\classes\selector
+
+sfdx force:source:deploy -p "path/to/apex/classes/AccessForDAMMetaDataSelector.cls,"
+
+sfdx force:apex:class:create -n AccessForDAMMetaDataSelectorTest -d ..\src\core\main\default\classes\selector
+
+src\core\test\classes\selector\AccountTeamMembersSelectorTest.cls
+
+sfdx force:apex:test:run --classnames "AccessForDAMMetaDataSelectorTest" --resultformat tap --codecoverage
+
+
+
+sfdx force:apex:class:create -n OpportunitiesServiceTest 
+
+
+sfdx force:apex:test:run --classnames "OpportunitiesServiceTest" --resultformat tap --codecoverage
+
+PS C:\Users\navanit.kamble\OneDrive - Expereo International\Documents\exp work\nextgen-salesforce-v2\src\domains\sales\sales-core\main\classes\service> sfdx force:apex:class:create -n OpprtunitiesService
+target dir = C:\Users\navanit.kamble\OneDrive - Expereo International\Documents\exp work\nextgen-salesforce-v2\src\domains\sales\sales-core\main\classes\service
+   create OpprtunitiesService.cls
+   create OpprtunitiesService.cls-meta.xml
+
+PS C:\Users\navanit.kamble\OneDrive - Expereo International\Documents\exp work\nextgen-salesforce-v2\src\domains\sales\sales-core\main\classes\service> sfdx force:apex:class:create -n OpportunitiesServiceTest
+target dir = C:\Users\navanit.kamble\OneDrive - Expereo International\Documents\exp work\nextgen-salesforce-v2\src\domains\sales\sales-core\main\classes\service
+   create OpportunitiesServiceTest.cls
+   create OpportunitiesServiceTest.cls-meta.xml
+
+PS C:\Users\navanit.kamble\OneDrive - Expereo International\Documents\exp work\nextgen-salesforce-v2\src\domains\sales\sales-core\main\classes\service>
+
+
+sfdx force:apex:class:create -n ProfileSelector 
+
+sfdx force:apex:test:run --tests "OpportunitiesServiceTest.testProfile" --resultformat tap --codecoverage
+sfdx force:apex:test:run --tests "OpportunitiesServiceTest.testInsert" --resultformat tap --codecoverage
+
+sfdx force:apex:trigger:create -n AccountTeamMemberTrigger
+
+sfdx force:apex:class:create -n AccountTeamMembers
+
+
+sfdx force:apex:test:run --classnames "OpportunitiesServiceSalesTest" --resultformat tap --codecoverage
+
+C:\Users\navanit.kamble\OneDrive - Expereo International\Documents\exp work\nextgen-salesforce-v2\src\core\main\default\objects
+
+sfdx force:org:list --verbose --json
+
+sfdx force:user:password:generate --targetusername test-qjq3eeaor5z5@example.com
+
+sfdx force:source:retrieve -m CustomField:AccountTeamMember.TeamMemerRole
+
+sfdx force:source:retrieve -m CustomField:Opportuntiy.BOSS6Quote__c
+sfdx force:source:retrieve -m CustomField:Opportuntiy.TeamsChannel__c
+
+sfdx force:source:retrieve -m CustomField:Opportuntiy.IsConverted__c
+sfdx force:source:retrieve -m CustomField:Lead.OpportunityConversionSetting__c
+
+sfdx force:auth:web:login --setalias expereo-test2-org --instanceurl  https://expereo--test2.my.salesforce.com/
+
+sfdx force:auth:web:login --setalias Expere-Prod --instanceurl https://expereo.my.salesforce.com/
+
+sfdx force:auth:web:login --setalias expereo-Accp2-org --instanceurl  https://expereo--accp2.my.salesforce.com/
+
+
+sfdx force:source:retrieve -m CustomField:AccountTeamMember.OpportunityAccess__c
+sfdx force:source:retrieve -m CustomField:AccountTeamMember.CasecAccess__c
+sfdx force:source:retrieve -m CustomField:AccountTeamMember.AccountAccess__c
+
+sfdx force:source:retrieve -m CustomField:AccountTeamMember.OpportunityAccess__c,CustomField:AccountTeamMember.CasecAccess__c,CustomField:AccountTeamMember.AccountAccess__c
+
+sfdx force:source:deploy -p "src-access-management\main\applications\GoLive.app-meta.xml"
+
+RESET FEATURE BRANCH
+git reset --hard origin/master
+git push -f origin feature-ONE-4561-CSM-Profile-Adjustment
+
+CREATE BRANCH
+git branch <branch Name>
+MERGEG MASTER 
+Make an upstream branch:
+git push --set-upstream origin feature-ONE-4979-Requested-Products-Mandatory-On-Opportuntiy-Layouts
+
+Merge other ppls branch into local. 
+
+git merge origin/domain-injection
+
+Cherry pick single commit 
+git cherry-pick 62ecb3
+https://www.devroom.io/2010/06/10/cherry-picking-specific-commits-from-another-branch/
+
+
+sfdx force:source:deploy -p "src\domains\sales\sales-core\main\permissionSets\ExpereoSalesRepSales.permissionset-meta.xml"
+
+sfdx force:source:deploy -p  "src\domains\sales\sales-core\main\objects\Opportunity\fields\ProductCategory__c.field-meta.xml"
+
+sfdx force:source:retrieve -m CustomField:Opportunity.ProductCategory__c
+OrderConversionStatus__c
+
+Press "q" to return to the command prompt
+
+sfdx force:source:retrieve -m ValidationRule:Account.NonContractAccountShouldNotHaveDAM
+
+8828735962
+NonContractAccountShouldNotHaveDAM
+
+sfdx force:source:deploy -p src\cpq\main\lwc\siteForm
+
+sfdx force:source:deploy -p "src\cpq\main\classes\selector\CPQSitesSelector.cls,src\cpq\test\classes\selector\CPQSitesSelectorTest.cls,src\cpq\main\classes\controller\AddSitesToRequestController.cls,src\cpq\test\classes\controller\AddSitesToRequestControllerTest.cls"
+
+
+sfdx force:apex:test:run --classnames "AddSitesToRequestControllerTest,CPQSitesSelectorTest" --resultformat tap --codecoverage
+
+
+ sfdx force:source:deploy -p "src\cpq\main\lwc\locationForm,src\cpq\main\lwc\addNewSite,src\cpq\main\lwc\addSitesToRequest,src\cpq\main\lwc\locationForm,src\cpq\main\lwc\siteForm,src\cpq\main\lwc\existingSites"
+ 
+
+sfdx force:apex:test:run --tests "AddSitesToRequestControllerTest.testSaveSite_SiteDoesNotExists,AddSitesToRequestControllerTest.testSaveSite_SimilarSiteExists,AddSitesToRequestControllerTest.testSaveSite_SiteExists" --resultformat tap --codecoverage 
+
+sfdx force:apex:test:run --tests "AddSitesToRequestControllerTest.testSaveSite_SiteDoesNotExists,AddSitesToRequestControllerTest.testSaveSite_SimilarSiteExists"
+
+sfdx force:source:retrieve -m "ListView:SLALevel__c.All"
+
+sfdx force:source:retrieve -m "Layout:Account-Retail Account"
+
+//apex hawx permisison
+//event store items
+
+
+sfdx force:apex:test:run --tests "CartItemsSelectorTest.getCartItemsForCartClosure_cartIdsProvided_cartItemsReturned,CartsServiceTest.setCartStatusOnCartItemConversion_cartItemsProvided_cartStatusGetsClosed,cpq_CartItemsTest.onAfterUpdate_existingRecordsMap_cartRecordUpdated,CartItemsConstantsTest.cartItemsConstantsTest_keyPassed_valueReturned"  --resultformat tap --codecoverage
+
+
+CartItemsConstantsTest
+sfdx force:source:retrieve -m "FlexiPage:GoLIveSiteRecordPage"
+
+sfdx force:apex:test:run --tests "CartItemsConstantsTest.cartItemsConstantsTest_keyPassed_valueReturned"  --resultformat tap --codecoverage
+
+(<allowCreate>true</allowCreate>[\s\S\n]*<object>Account)
+(<allowCreate>true</allowCreate>[\s\S\n]*<object>AccountPlan)
+ExpereoReadEditAccountPlans
+
+sfdx force:org:list --clean
+https://www.black-fox.org/sfdx-salesforce-cli/retrieve-salesforce-metadata-sfdx-main-commands/
+
+
+sfdx plugins:install enxoo@0.1.XX
+sfdx enxoo:cpq:prd:import -p '*ALL' -d "data/config-data/Products" -b -u feb-05 -a 3
+
+sfdx enxoo:cpq:prd:describe -u feb-05 -d data\config-data\Products
+
+sfdx enxoo:cpq:prd:retrieve -u feb-05 -p '*ALL' -d data\config-data\Product
+data\config-data\Products
+
+data\config-data\Products\products\Fixed Internet_PRD_FIXEDINTERNET.json
+data\config-data\Products\attributes
+
+
+sfdx force:source:retrieve -m CustomField:RequestItemVariant__c.IsOnNet__c
+
+7746 - 
+
+
+sfdx force:source:retrieve -m CustomObject:LegacyServiceMapper__mdt
+
+sfdx force:source:retrieve -m "CompactLayout:enxCPQ__CartItem__c.enxCPQ__Default_Compact_Layout"
+
+
+
+(<editable>true</editable>[\s\S\n]*<field>Opportunity.QualificationStage__c)
