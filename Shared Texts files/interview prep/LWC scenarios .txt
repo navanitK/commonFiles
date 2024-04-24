@@ -9,10 +9,21 @@ we designed a custom table to manage this and showed the data in tabular format 
 
 The LWC was places in the Flexi page on the Account related list tab. 
 
-2) 
-
-Table too Large : 
+2) Table too Large : 
 
 Case table was grown beyond 300 Fields : 
 
-Solution we created antother table and had one to one mapping 
+Solution we created antother table and had one to one mapping between the tables. 
+Over ride the View button with a VF page , 
+the action was set to redirect to a VF page and we showed details in the VF page. 
+
+you can launch and AURA component from this VF to show the detail view 
+
+
+3) show multiple Order and Order line items in a single view 
+
+Client wanted a two apge alyout 
+	on the left side : see List of orders and when they select 
+	opn the right side OLIs from that order need to been seen and sorted by delivery status . 
+	
+	We made lwc, other option , joined report but client did not like the UI as it was too long of a page and lot of scrolling .
