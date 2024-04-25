@@ -1,0 +1,52 @@
+what do u like about SF -
+    -analytical thinking 
+    -ease of learning 
+    -growing product 
+    -design based on best tools. reusabality and maintainace 
+
+what do you like to do -
+    -workshop with buisness - and make buisness process out of it. 
+    -copllaborating with stake holders with each having a different vision
+    -business benifits
+
+what do you not like about SF
+    - some simpler things that you assume will be OOB needs customisations. 
+        - Account team history component.  
+    - flow 
+        - difficult to work solely on Flow.
+        - CPU utilisation 
+        - getting Sobject information  
+        
+
+what was some of the most challenging work you did in the past 
+    - Case flows were causing CPU time limit, which I learnt going through Debug logs. 
+    - I had analysed all the flows and moved them to trigger. 
+
+
+What were the things you considered when migrating to Lightning
+    - remove the js buttons 
+    - vf pages that are not wortking need to be udpated to aura components.
+    - some times Stylesheets work. 
+    - message channel to comm between vf, lwc , aura .
+
+what were the things to consider when designing the integration scenario you mentioned.
+    - what to use SOAP / REST 
+    - portal authenticate - Connedted app - private key shared 
+    - rest API there is  login method which gives token. 
+    - we used REST and and we used custom rest methods as multiple objects were involved. 
+
+where were some places you had to use LWC 
+
+how you decide which automation Tool to use 
+
+Do u perform code reviews. How often.
+
+Why do you want to change job , why move out 
+
+see yourself in 5 years. U can be very realistic here. 
+
+your answers just need to sound first Genuine and second interesting.
+
+have you done deployments in the past and so on
+
+why no SFDX yet . bolna company ke budget se chalti hai chizen

@@ -1,0 +1,35 @@
+when the business entity (Object) has complex functionality use Apex triggers.
+
+if less complex use flows 
+
+If and object has Apex trigger already do not create automated flows. leads to CPU Limits. 
+
+SYNC 
+    - Triggers
+    - Flow - screen flows, record update flows, platform event, Autolaunch(sub flows.)
+    - processes 
+    - approval process
+    - escalation rules 
+    - assignments rules
+
+ASYNC
+    - Batch : large data set 
+    - Future: separate the transaction/ double limits ; example of portal user creation, mixed dml  exception 
+    - Flex Queues (Quable)
+
+
+Flows 
+    - Screen 
+    - record triggered 
+    - scheduled flows 
+
+
+
+batch : 
+
+batch size = 200
+
+
+Quable vs batch : 
+
+https://stories.salesforcecodex.com/2022/06/interview-tips/queueable-vs-batch-apex-in-salesforce/

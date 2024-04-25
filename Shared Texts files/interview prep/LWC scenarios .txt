@@ -9,6 +9,8 @@ we designed a custom table to manage this and showed the data in tabular format 
 
 The LWC was places in the Flexi page on the Account related list tab. 
 
+Object , last value, new Value, Modified by , mod date . 
+
 2) Table too Large : 
 
 Case table was grown beyond 300 Fields : 
@@ -27,3 +29,6 @@ Client wanted a two apge alyout
 	opn the right side OLIs from that order need to been seen and sorted by delivery status . 
 	
 	We made lwc, other option , joined report but client did not like the UI as it was too long of a page and lot of scrolling .
+
+4) 
+

@@ -1,0 +1,37 @@
+SOAP 
+
+    <envelop>
+        <xml data>
+    </envelop>
+
+
+WSDL definition - smx structure 
+soap is the implementation of that structure at run time.  
+
+service consumer asks for WSDL 
+wsdl tells data structure for the Request 
+then we fire request 
+get response from google
+
+every time new param is added to the service , a new wsdl file needs to be published by google. 
+every clinent(consumer ) has to update thier code to consume the new WSDL.
+
+when clien t requests calls ;
+
+salesforce library converts the message into Soap envelop 
+and send sopa enveloop to Service provider. 
+
+upon the HTTP we will send DATA in an XML , called SOAP envelop.
+SOAP envelop will be designed by the run time based on WSDL file. 
+
+
+REST 
+
+JSON {}, [], name-_ value 
+
+Send JSON over HTTP 
+so since in JSON everything is an object . and we can add things or remove at run time. 
+Loosely structured language 
+
+
+
