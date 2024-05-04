@@ -114,8 +114,17 @@ JS{
 	printAgeAndName(){
 		console.log(his name is + _firstName + _lastName +  and his age is + this._birthDate );
 	}
+
+	
+	renderedCallback(){
+		
+		fullName('Nav', 'k');
+		hasRendered = true;
+		
+	}
 	
 }
+
 
 
 ManagedPKG__Product__c
@@ -129,3 +138,17 @@ parentLWC.html
   </div>
   
 </template>
+
+
+----------------------------------------------------
+
+connectedcallback(){
+	printAgeAndName(){
+		console.log(his name is + _firstName + _lastName +  and his age is + this._birthDate );
+	}
+}
+
+renderedCallback(){
+
+	fullName('Nav', 'k');
+}
