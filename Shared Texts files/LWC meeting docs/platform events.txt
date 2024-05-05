@@ -1,0 +1,30 @@
+
+
+Class A{
+    ..
+}
+
+//publish 
+A instace = new A();
+
+new instance of A has been created.. .
+
+trigger on Update of Account {
+// publish waht changed on Account 
+// on channel (event) Acc__e
+
+Acc__e newEventInstance = new Acc__e();
+newEventInstance.changedField = 'industry';
+newEventInstance.changedValue = 'IT';
+newEventInstance.uuid = systemgenerated;
+
+EventBus.Publish(newEventInstance);
+
+}
+
+Trigger acccEventTrigger on Acc__e (afterInsert) {
+    for(Acc__e currectEvent : Trigger.New){
+        Strign changedField = currectEvent.changedField;
+         
+    }
+}
