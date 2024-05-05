@@ -22,6 +22,7 @@ EventBus.Publish(newEventInstance);
 
 }
 
+//Subscription in trigger
 Trigger acccEventTrigger on Acc__e (afterInsert) {
     for(Acc__e currectEvent : Trigger.New){
         Strign changedField = currectEvent.changedField;
