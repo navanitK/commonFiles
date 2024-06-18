@@ -1,0 +1,11 @@
+reply to the question on IP address. 
+ 
+ 
+ From within the OSS we should be able to get the ‘parent’ subnet; let us know what you decide to implement.
+ 
+ 
+ Agree on error code with topsy for cusomter API..
+ 
+ 
+ contact info , matching locig ? are we creating contacts when creating cases ? 
+ 
