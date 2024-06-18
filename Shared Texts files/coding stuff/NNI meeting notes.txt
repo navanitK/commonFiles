@@ -1,0 +1,62 @@
+ if u select type then picklist will get populated
+ 
+ 
+ extendede means not eurofiber pop 
+ but external pop 
+ 
+ 
+ onnet remains non aplicable for nni 
+ 
+ EVC not showing NNI name in the Item name 
+ 
+ item name anv + demarc will be blank to be updated by user 
+ 
+ 
+ since low volume product , lets keep pricing manual 
+ ----------------------
+ when to make available for new ethernets. ?
+ 
+ on delivery or when 
+
+ROB:  
+ on portals after delivery 
+ 
+ internal make available sonner before delivered.
+ 
+ once accepted on Order then NNI should be avaialble
+ --------------------
+ NNI always needs capacity check .
+ 
+ check with Sales engineers for any other fields they need. 
+ (may be schedule follow up)
+ 
+ In budget overview - demarc : standard CPE : it should be POP 
+ 
+ -------------
+ 
+ we have check on clean order,more than 1 month old cap check not allowed 
+ 
+ V lan range added and mandatory ,  in clean order step 
+ 
+ 
+ ------------------------------------
+ for NNI Contractor will awalays be Eurofiber, no choice to select contractor.
+ even for extended its always Eurofiber 
+ 
+ ------------when do we get PAF ??
+ 
+ After total design. 
+ 
+ -------------------------seperate WO for NNI 
+ total design -> pre -provision nni ---> , pulish PAF ---> NMC -> rfs WP. 
+ 
+ 
+ -----check order confirmation deviation , how easy is it ? 
+ 
+ ---------NNI does not have site survey 
+ 
+ ----Make connection ready not required, (NMC ): decided to keep it in 
+ 
+ ----
+ 
+ 
