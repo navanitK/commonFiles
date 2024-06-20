@@ -9,3 +9,16 @@ reply to the question on IP address.
  
  contact info , matching locig ? are we creating contacts when creating cases ? 
  
+ Case SLA is driven by categpry 
+ 
+NMC :
+
+need to store authorised contacts visible on CDR tickets .
+(CTI solution may be)
+pop up- talk to authorise contacts only for CDR cusotmer and notify the case is CDR customer case 
+
+Priority mapping - 
+Sla mapping -
+
+Think multiple cusotmer not just CDR 
+
