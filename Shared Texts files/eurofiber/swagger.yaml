@@ -1,0 +1,39 @@
+swagger: '2.0'
+info:
+  contact: {}
+  title: customerAPI
+  version: 1.0.0
+host: eurofiber--nkcdr1.sandbox.my.salesforce.com
+basePath: /
+schemes:
+  - https
+paths:
+  /services/apexrest/customerWS/v1:
+    get:
+      consumes:
+        - text/plain
+      parameters:
+        - in: query
+          name: portPositionPoP
+          type: string
+        - in: query
+          name: networkElementPoP
+          type: string
+        - in: query
+          name: iPv4Subnet
+          type: string
+        - in: query
+          name: iPv6Subnet
+          type: string
+        - in: body
+          name: body
+          schema:
+            format: binary
+            type: string
+      responses:
+        '200':
+          description: ''
+      description: GET CUSTOMER INFO
+      operationId: getCustomerInfo
+      summary: GET CUSTOMER INFO
+tags: []
