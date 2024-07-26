@@ -1,0 +1,143 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "contact": {},
+    "title": "#{apiName}#",
+    "version": "1.0.0"
+  },
+  "host": "#{salesforceApiHostAddress}#",
+  "basePath": "#{customerApiBasePath}#",
+  "schemes": [
+    "https"
+  ],
+  "securityDefinitions": {
+    "apiKeyHeader": {
+      "type": "apiKey",
+      "name": "Ocp-Apim-Subscription-Key",
+      "in": "header"
+    },
+    "apiKeyQuery": {
+      "type": "apiKey",
+      "name": "subscription-key",
+      "in": "query"
+    }
+  },
+  "security": [
+    {
+      "apiKeyHeader": []
+    },
+    {
+      "apiKeyQuery": []
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "consumes": [
+          "text/plain"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "portPositionPoP",
+            "type": "string",
+            "description": "port pop details from the network.(ge-0/0/51)",
+            "required": false,
+            "default": "#{testPartnerCommunityUsername}#"
+          },
+          {
+            "in": "query",
+            "name": "networkElementPoP",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "iPv4Subnet",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "iPv6Subnet",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/CustomerInfoResponse"
+            },
+            "examples": {}
+          }
+        },
+        "description": "GET CUSTOMER INFO",
+        "operationId": "getCustomerInfo",
+        "summary": "GET CUSTOMER INFO"
+      }
+    }
+  },
+  "definitions": {
+    "CustomerInfoResponse": {
+      "description": "This is the response to a customer info request",
+      "type": "object",
+      "properties": {
+        "ServiceDetails": {
+          "type": "object",
+          "properties": {
+            "ServiceId": {
+              "type": "string",
+              "example": "SID000048174"
+            }
+          }
+        },
+        "CustomerDetails": {
+          "type": "object",
+          "properties": {
+            "CustomerId": {
+              "type": "string",
+              "example": "0011w00001TKuNUAA1"
+            }
+          }
+        },
+        "AssetDetails": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "AssetId": {
+                "type": "string",
+                "example": "02i1w00000BhetaAAB"
+              }
+            }
+          }
+        },
+        "AddressDetails": {
+          "type": "object",
+          "properties": {
+            "Street": {
+              "type": "string",
+              "example": null
+            },
+            "PostalCode": {
+              "type": "string",
+              "example": null
+            },
+            "Num": {
+              "type": "string",
+              "example": null
+            },
+            "Country": {
+              "type": "string",
+              "example": null
+            },
+            "City": {
+              "type": "string",
+              "example": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": []
+}
