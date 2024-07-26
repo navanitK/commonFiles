@@ -42,18 +42,20 @@
             "name": "portPositionPoP",
             "type": "string",
             "description": "port pop details from the network.(ge-0/0/51)",
-            "required": false,
-            "default": "#{testPartnerCommunityUsername}#"
+            "required": false
           },
           {
             "in": "query",
             "name": "networkElementPoP",
-            "type": "string"
+            "type": "string",
+			"description": "Network element pop details. (AX2.GV0001)"
+			"required": false
           },
           {
             "in": "query",
             "name": "iPv4Subnet",
-            "type": "string"
+            "type": "string",
+			"description": "Network element pop details. (AX2.GV0001)"
           },
           {
             "in": "query",
