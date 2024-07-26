@@ -1,0 +1,95 @@
+openapi: 3.0.1
+info:
+  title: Customer API
+  contact: {}
+  version: 1.0.0
+servers:
+- url: https://eurofiber--test4.sandbox.my.salesforce.com/services
+tags: []
+paths:
+  /apexrest/customerWS/v1:
+    get:
+      summary: GET CUSTOMER INFO
+      description: |
+                  The Requester can share network paramters for this request.
+                   Only one parameter is processed for finding the data.
+                   The Order of preferece for search is :
+                   
+                    1: portPositionPoP   
+                    
+                    2: networkElementPoP
+                    
+                    3: iPv4Subnet
+                    
+                    4: iPv6Subnet
+                    
+                    The server only moves to networkElementPoP parameter if portPositionPoP is not specified.
+      operationId: getCustomerInfo
+      parameters:
+      - name: portPositionPoP
+        in: query
+        schema:
+          type: string
+      - name: networkElementPoP
+        in: query
+        schema:
+          type: string
+      - name: iPv4Subnet
+        in: query
+        schema:
+          type: string
+      - name: iPv6Subnet
+        in: query
+        schema:
+          type: string
+      responses:
+        "200":
+          content:
+            application/json;charset=utf-8:
+              example: '{
+                          "ServiceDetails": {
+                              "ServiceId": "SID000048174"
+                          },
+                          "CustomerDetails": {
+                              "CustomerId": "0011w00001TKuNUAA1"
+                          },
+                          "AssetDetails": [
+                              {
+                                  "AssetId": "02i1w00000BhetaAAB"
+                              }
+                          ],
+                          "AddressDetails": {
+                              "Street": null,
+                              "PostalCode": null,
+                              "Num": null,
+                              "Country": null,
+                              "City": null
+                          }
+                      }'
+          description: "OK."
+        "400":
+          content:
+            application/json;charset=utf-8:
+              example: '{
+                          "message": "The request does not comply the format.",
+                          "code": 400
+                        }'
+          description: "Prameters mis match."
+        "404":
+          content:
+            application/json;charset=utf-8:
+              example: '{
+                            "message": "Asset could not be found.",
+                            "code": 404
+                        }'
+          description: "Data not found"
+        "500":
+            content:
+              application/json;charset=utf-8:
+                example: '{
+                              "message": "Internal server error.",
+                              "code": 500
+                          }'
+            description: "Internal server error."
+components: {}
+x-original-swagger-version: "2.0"

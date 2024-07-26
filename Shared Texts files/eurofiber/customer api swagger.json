@@ -1,0 +1,76 @@
+{
+    "collection": {
+        "info": {
+            "_postman_id": "b1560b8e-9058-4d25-8fcb-c31e2ecd0524",
+            "name": "customerAPI",
+            "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+            "updatedAt": "2024-07-23T17:22:14.000Z",
+            "createdAt": "2024-07-11T14:28:00.000Z",
+            "lastUpdatedBy": "36922115",
+            "uid": "36922115-b1560b8e-9058-4d25-8fcb-c31e2ecd0524"
+        },
+        "item": [
+            {
+                "name": "GET CUSTOMER INFO",
+                "id": "533813ce-cc76-46ce-b9e5-48627675aeea",
+                "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                },
+                "request": {
+                    "auth": {
+                        "type": "bearer",
+                        "bearer": [
+                            {
+                                "key": "token",
+                                "value": "{{sessionid}}",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "body": {
+                        "mode": "raw",
+                        "raw": "",
+                        "options": {
+                            "raw": {
+                                "language": "json"
+                            }
+                        }
+                    },
+                    "url": {
+                        "raw": "{{serverurl}}/apexrest/customerWS/v1?portPositionPoP=10&networkElementPoP&iPv4Subnet=&iPv6Subnet",
+                        "host": [
+                            "{{serverurl}}"
+                        ],
+                        "path": [
+                            "apexrest",
+                            "customerWS",
+                            "v1"
+                        ],
+                        "query": [
+                            {
+                                "key": "portPositionPoP",
+                                "value": "10"
+                            },
+                            {
+                                "key": "networkElementPoP",
+                                "value": null
+                            },
+                            {
+                                "key": "iPv4Subnet",
+                                "value": ""
+                            },
+                            {
+                                "key": "iPv6Subnet",
+                                "value": null
+                            }
+                        ]
+                    }
+                },
+                "response": [],
+                "uid": "36922115-533813ce-cc76-46ce-b9e5-48627675aeea"
+            }
+        ]
+    }
+}
