@@ -1,0 +1,18 @@
+Id orderId = '8010D000003lcIxQAI';
+Order ordr = new Order(Id = orderId);
+ordr.status = 'In Review';
+update ordr;
+ordr.status = 'Commercially Clean';
+update ordr;
+List<OrderItem> orderItems = [Select Id, Product2.ProductCode from OrderItem where OrderId =: orderId];
+for (OrderItem o: orderItems){
+    o.Status__c = 'Activated';
+        o.ServiceDate = System.today();
+        o.ReadyForServiceDate__c = System.today();
+}
+update orderItems;
+Order ord = new Order(Id = orderId);
+ord.ReadyForServiceDate__c =  System.today();
+ord.ReadyForService__c = true;
+ord.ReadyForBilling__c = true;
+update ord;
