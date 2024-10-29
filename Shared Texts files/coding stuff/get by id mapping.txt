@@ -1,0 +1,114 @@
+{
+  "attachment": [
+    {
+      "attachmentId": "string",
+      "author": "string",
+      "content": "string",
+      "creationDate": "2024-10-29T18:07:26.137Z",
+      "description": "string",
+      "mimeType": "string",
+      "name": "string",
+      "size": {
+        "amount": 1,
+        "units": "BYTES"
+      },
+      "source": "buyer",
+      "url": "string"
+    }
+  ],
+  "description": "string",															Description
+  "externalId": "string",															response.externalId = resultCase.CustomerReference__c;	
+  "issueStartDate": "2024-10-29T18:07:26.137Z",										StartOutage__c
+  "note": [
+    {
+      "author": "string",
+      "date": "2024-10-29T18:07:26.137Z",
+      "id": "string",
+      "source": "buyer",
+      "text": "string"
+    }
+  ],
+  "observedImpact": "degraded",														EF_ObservedImpact__c
+  "priority": "low",																EF_CustomerPriority__c
+  "relatedContactInformation": [
+    {
+      "emailAddress": "string",
+      "name": "string",
+      "number": "string",
+      "numberExtension": "string",
+      "organization": "string",
+      "postalAddress": {
+        "country": "string",
+        "streetType": "string",
+        "postcodeExtension": "string",
+        "city": "string",
+        "streetNr": "string",
+        "locality": "string",
+        "postcode": "string",
+        "streetNrLast": "string",
+        "streetNrSuffix": "string",
+        "streetName": "string",
+        "stateOrProvince": "string",
+        "streetNrLastSuffix": "string",
+        "geographicSubAddress": {
+          "buildingName": "string",
+          "id": "string",
+          "levelNumber": "string",
+          "levelType": "string",
+          "privateStreetName": "string",
+          "privateStreetNumber": "string",
+          "subUnit": [
+            {
+              "subUnitNumber": "string",
+              "subUnitType": "string"
+            }
+          ]
+        },
+        "streetSuffix": "string"
+      },
+      "role": "string"
+    }
+  ],
+  "relatedEntity": [
+    {
+      "@referredType": "Product",
+      "href": "string",
+      "id": "string",
+      "role": "string"
+    }
+  ],
+  "relatedIssue": [
+    {
+      "@referredType": "string",
+      "creationDate": "2024-10-29T18:07:26.138Z",
+      "description": "string",
+      "href": "string",
+      "id": "string",
+      "relationshipType": "string",
+      "source": "buyer"
+    }
+  ],
+  "severity": "minor",																EF_CustomerSeverityToShare__c
+  "ticketType": "assistance",														EF_CustomerTicketType__c			
+  "creationDate": "2024-10-29T18:07:26.138Z",
+  "expectedResolutionDate": "2024-10-29T18:07:26.138Z",								ExpectedDateSolved__c
+  "href": "string",
+  "id": "string",																	EF_AsyncRecordName__c/CaseNumber
+  "resolutionDate": "2024-10-29T18:07:26.138Z",										DateTimeResolved__c
+  "sellerPriority": "low",															EF_CustomerPriorityToShare__c	
+  "sellerSeverity": "minor",														EF_CustomerSeverityToShare__c	
+  "status": "acknowledged",															EF_StatusForCustomer__c		
+  "statusChange": [
+    {
+      "changeDate": "2024-10-29T18:07:26.138Z",
+      "changeReason": "string",
+      "status": "acknowledged"
+    }
+  ],
+  "workOrder": [
+    {
+      "href": "string",
+      "id": "string"
+    }
+  ]
+}
