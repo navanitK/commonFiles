@@ -1,0 +1,31 @@
+[
+  {
+    "ipv4": "151.248.53.163",
+    "device POP": "ax1.dieg0001",
+    "pop port": "ge-0/0/19",
+    "ipv4 CIDR": "151.248.53.160/27",
+	https://eurofiber--test4.sandbox.lightning.force.com/lightning/r/Order/8010D000003leAJQAY/view
+  },
+  {
+    "ipv4": "144.178.235.78",
+    "device POP": "ax1.ere0001",
+    "pop port": "z",
+    "ipv4 CIDR": "144.178.235.76/30",
+	https://eurofiber--test4.sandbox.lightning.force.com/lightning/r/Order/8010D000003lg4SQAQ/view
+  },
+  {
+    "ipv4": "144.178.235.162",
+    "device POP": "ax1.has1046",
+    "pop port": "ge-0/0/59",
+    "ipv4 CIDR": "144.178.235.160/30"
+  },
+  {
+    "ipv4": "144.178.235.166",
+    "device POP": "ax1.has1046",
+    "pop port": "ge-0/0/60",
+    "ipv4 CIDR": "144.178.235.164/30"
+  }
+]
+
+
+chk the customer is not the same for block 2 , also others 
