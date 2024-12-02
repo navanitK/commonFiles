@@ -1,0 +1,23 @@
+- Close ticket 
+- cant close ticket when there is an open comment 
+- difference between Cusotmer close and topsy close.
+- Only one ticket , so if requested against same SID, then update the ticket ?or create related ticket internally ?
+- 
+
+
+- 4/ 5 service on Test 4 . 
+- tomorrow end poit should on DEMO. 
+- Documentation is up to date 
+- PDC to Asset/Case 
+
+telindus
+
+- Sharing needs to built. +  user Creds 
+- Ticket Specifics to CDR - telindus
+- Notification service 
+- credentais for Azure gateway.
+
+proximusNext
+
+
+
