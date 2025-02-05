@@ -204,3 +204,5 @@ sfdx force:source:retrieve -m "CompactLayout:enxCPQ__CartItem__c.enxCPQ__Default
 
 homelaptopkey
 PMAK-669fe66513dc2d000171e663-adb2f408546a2b26d45fdaa8ba0393791b
+
+sfdx force:source:retrieve -m FieldSet:EF_ApprovalRequest__c.Contractor_PSA_AR_Detai
