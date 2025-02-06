@@ -1,0 +1,40 @@
+ 
+{
+    "attachment": [{
+        "attachmentId": "AT-0001",
+        "author": "string",
+        "content": "string",
+        "creationDate": "2014-08-12T12:00:07.125Z",
+        "description": "string",
+        "mimeType": "string",
+        "name": "string",
+        "size": {
+            "amount": 1,
+            "units": "BYTES"
+        },
+        "source": "buyer",
+        "url": "string"
+    }],
+    "description": "There has been a Issue with Service Offered.",
+    "externalId": "151",
+    "issueStartDate": "2114-08-12T12:00:07.125Z",
+    "note": [{
+        "author": "Author of the note",
+        "date": "2024-08-12T12:00:07.125Z",
+        "id": "string",
+        "source": "buyer",
+        "text": "string"
+    }],
+    "observedImpact": "degraded",
+    "priority": "Priority1",
+    "relatedContactInformation": [],
+    "relatedEntity": [{
+        "@referredType": "Product",
+        "href": "string",
+        "id": "SID000123406",
+        "role": "string"
+    }],
+    "relatedIssue": [],
+    "severity": "minor",
+    "ticketType": "Connection"
+}
