@@ -1,0 +1,103 @@
+public class Calculate {
+	integer a
+	integer b;
+	
+	Static Calculate staticInstance = new Calculate();
+	
+	Static integer c;
+	
+	integer add(){
+	return a + b
+	}
+	
+	static integer subtract(){
+		return (staticInstance.a - staticInstance.b);
+	}
+	
+}
+
+main()
+Calculate instance1 = new Calculate();
+
+instance1.a = 3
+instance1.b = 2
+
+instance1.add(); = 5
+
+
+Calculate instance2 = new Calculate();
+
+instance2.a = 3
+instance2.b = 2
+
+instance2.add(); = 5
+
+//execution of static 
+
+Calculate.staticInstance.a = 3;
+Calculate.staticInstance.b = 2;
+Calculate.subtract(); // 1
+
+//memeory 
+Instance1
+{
+	a , b , add
+
+}
+
+Instance2
+{
+	a , b, add
+
+}
+
+Calculate{
+	c, subtract , 
+	staticInstance
+	{
+		a , b, add
+
+	}
+}
+
+///
+
+main()
+
+ ContractorCardWorkOrderService.instance = new ContractorCardWorkOrderService(woPortalSelectorMock, managerServiceMock);
+	ContractorCardWorkOrderService.getProjectIdForPSA(woRec.Id);
+	
+	ContractorCardWorkOrderService.instance2 = new ContractorCardWorkOrderService();
+///
+
+ContractorCardWorkOrderService
+{
+
+	instance{
+		woSelector = woPortalSelectorMock
+		userManagerService	 = managerServiceMock		
+	}
+	getProjectIdForPSA(id)
+	isPSAEnabled()
+	instance2{
+		woSelector = new WorkOrderPortalSelector()
+		userManagerService = new UserManagerService()
+	}
+	
+	
+
+}
+
+
+ContractorCardWorkOrderService
+{
+	instance{
+		woSelector = woPortalSelectorMock
+		userManagerService	 = managerServiceMock
+	}
+	getProjectIdForPSA()
+	instance{
+		woSelector = woPortalSelectorMock
+		userManagerService	 = managerServiceMock
+	}
+}
