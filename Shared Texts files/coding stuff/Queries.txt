@@ -1,0 +1,1 @@
+Select Id,CreatedDate, EF_BusinessAccountId__c, EF_EventPublishingStatus__c,EF_ObjectType__c,EF_RecordId__c,EF_SupplierAccountId__c,EF_TriggeringUserId__c,EF_EventName__c from EF_NotificaitonMessageQueue__c 
