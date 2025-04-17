@@ -1,1 +1,11 @@
 Select Id,CreatedDate, EF_BusinessAccountId__c, EF_EventPublishingStatus__c,EF_ObjectType__c,EF_RecordId__c,EF_SupplierAccountId__c,EF_TriggeringUserId__c,EF_EventName__c from EF_NotificaitonMessageQueue__c 
+
+Select Id,CreatedDate, EF_BusinessAccountId__c, EF_EventPublishingStatus__c,EF_ObjectType__c,EF_RecordId__c,EF_SupplierAccountId__c,EF_TriggeringUserId__c,EF_EventName__c from EF_NotificaitonMessageQueue__c 
+
+
+insert new PermissionSetAssignment(
+    AssigneeId = [SELECT Id FROM User WHERE alias = 'autoproc'].Id,
+    PermissionSetId = [SELECT id, name, Label from PermissionSet where Name = 'EF_NotificationNamedCredAccess']
+);
+
+select iD, Parent.asset.Product2.EF_Supplier__r.EF_NotificaitonSubscriptions__c from CaseComment
